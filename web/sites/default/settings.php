@@ -2,7 +2,7 @@
 
 /**
  * Load services definition file.
- */
+ */ 
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 /**
@@ -15,6 +15,13 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *      the site settings remain consistent.
  */
 include __DIR__ . "/settings.pantheon.php";
+
+
+/**
+ * Recommended setting for fewer database call while working in admin
+ *
+ */
+$settings['state_cache'] = TRUE;
 
 /**
  * Skipping permissions hardening will make scaffolding
