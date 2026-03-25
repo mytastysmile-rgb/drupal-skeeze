@@ -21,7 +21,8 @@
         "pantheon-systems/drupal-integrations": "^10",
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^13.7",
-        "drupal/webform": "^6.2"
+        "drupal/webform": "^6.2",
+        "wikimedia/composer-merge-plugin": "^2.1"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -74,6 +75,9 @@
         "platform": {
             "php": "8.3.30"
         },
+        "merge-plugin": {
+            "include": ["web/modules/contrib/webform/composer.libraries.json"]
+        },
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
@@ -81,7 +85,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
             "php-http/discovery": true,
-            "tbachert/spi": true
+            "tbachert/spi": true,
+            "wikimedia/composer-merge-plugin": true
         }
     }
 }
