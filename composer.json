@@ -42,7 +42,6 @@
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
-            }
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
@@ -75,9 +74,6 @@
         "platform": {
             "php": "8.3.30"
         },
-        "merge-plugin": {
-            "include": ["web/modules/contrib/webform/composer.libraries.json"]
-        },
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
@@ -85,8 +81,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
             "php-http/discovery": true,
-            "tbachert/spi": true,
-            "wikimedia/composer-merge-plugin": true
-        }
+            "tbachert/spi": true
+        },
     }
 }
